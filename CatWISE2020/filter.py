@@ -1,3 +1,9 @@
+# This file can help you to extract specified sources from the original CatWISE2020 catalogue in a given path on the local machine. 
+# Current code extracts high proper motion and faint sources with some significance of motion cut. 
+# It extracts only specified columns ('needed_cols') to speed up the process and save memory. 
+# Outputs can be saved in a grouped form to avoid too many small files, and the summary of the final output file names will be 
+# stored in "Output_names.csv" file for the further analysis.
+
 from pathlib import Path
 import numpy as np
 import pandas as pd
